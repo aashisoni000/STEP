@@ -4,10 +4,9 @@ public static void main(String[] args) {
     String text = " practice problem 1 of week 2 ";
     System.out.println("Original: '" + text + "'");
     System.out.println("Length: " + text.length());
-    String[] words = text.trim().split(" ");
-    System.out.println("Split into " + words.length + " words:");
-    for (int i = 0; i < words.length; i++) {
-        System.out.println(" " + (i+1) + ". " + words[i]);
+    String trimmedString = text.trim();
+    System.out.println("Trimmed String:"+trimmedString);
+    System.out.println("New length:" + trimmedString.length());
 }
-
+}
 
